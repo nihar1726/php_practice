@@ -21,7 +21,7 @@ class Student
         echo "Roll No: " . $this->rollno . "<br>";
         echo "Marks: " . $this->marks . "<br>";
     }
-}
+} //end of class
 
 echo 'This is happening becuase of the default constructor<br>';
 $student1 = new Student();
