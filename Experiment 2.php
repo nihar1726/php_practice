@@ -92,6 +92,39 @@ foreach($countries as $country => $deets)
 }
 
 echo '<hr>';
-?>
 
+
+//TASK 6: Print values stored in an associative array in ascending and descending order using ksort and krsort functions.
+
+$les_etudiants = array("23BCA10559" => "Priyanshi",
+                       "23BCA10560" => "Paramveer",
+                       "23BCA10561" => "Diya",
+                       "23BCA10562" => "Satyam",
+                       "23BCA10563" => "Zach",
+                       "23BCA10564" => "Cynthia",
+                       "23BCA10565" => "Ariana",
+                       "23BCA10566" => "Bowen",
+                       );
+echo '<b>Values stored in an associative array<br><br></b>';    
+foreach($les_etudiants as $uid => $name)
+{
+    echo '<i>'.$uid . ' is ' . $name . '</i><br>';
+}
+
+echo '<br><b>Values stored in an associative array in ascending order according to key<br><br></b>';
+ksort($les_etudiants);
+foreach($les_etudiants as $uid => $name)
+{
+    echo $uid . ' is ' . $name . '<br>';
+}
+
+echo '<br>';
+echo '<b>Values stored in an associative array in descending order according to key<br><br></b>';
+krsort($les_etudiants);
+foreach($les_etudiants as $uid => $name)
+{
+    echo $uid . ' is ' . $name . '<br>';
+}
+echo '<hr>';
+?>
 
